@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter.com</title>
+    <link rel="stylesheet" href="unit.css">
+</head>
+
+<body>
+
+    <div id="box" class="box">
+        <a href="#length">length</a>
+        <a href="#temperature">temperature</a>
+        <a href="#weight">weight</a>
+
+        <div id="length">
+
+            <div id="main" class="main">
+                <select name="" id="get" class="demo">
+                    <option value="meter">meter</option>
+                    <option value="cm">cm</option>
+                    <option value="foot">foot</option>
+                </select>
+
+                <select name="" id="set" class="inc">
+                    <option value="meter">meter</option>
+                    <option value="cm">cm</option>
+                    <option value="foot">foot</option>
+
+                </select>
+                <p id="demo" contenteditable="true" class="demo" onkeyup="getlen()">1</p>
+                <p id="inc" contenteditable="true" class="inc inc1">12</p>
+            </div>
+
+        </div>
+
+        <!--           
+        <-- do same thing for temperature -->
+<!-- 
+        <div id="temperature" class="temperature">
+            <div id="main" class="main">
+                <span class="demo">Celsius</span>
+                <span class="inc">Fahreheit</span>
+                <p id="celi" contenteditable="true" class="demo" onkeyup="getceli()">1</p>
+                <p id="fah" contenteditable="true" class="inc inc1" onkeyup="getfah()">12</p>
+
+            </div>
+        </div> -->
+ 
+        <div id="temperature">
+
+            <div id="main" class="main">
+                <select name="" id="get2" class="demo">
+                    <option value="Fahreheit">Fahreheit</option>
+                    <option value="Celcius">Celcius</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+
+                <select name="" id="set2" class="inc">
+                    <option value="Fahreheit">Fahreheit</option>
+                    <option value="Celcius">Celcius</option>
+                    <option value="Kelvin">Kelvin</option>
+
+                </select>
+                <p id="celi" contenteditable="true" class="demo" onkeyup="temp()">1</p>
+                <p id="fah" contenteditable="true" class="inc inc1" onkeyup="temp()">12</p>
+            </div>
+
+              </div>
+        
+     
+
+
+        <!--  do same thing for weight -->
+
+        <div id="weight">
+            <div id="main" class="main">
+                <span class="demo">Killo Gram</span>
+                <span class="inc">Gram</span>
+                <p id="kilo" contenteditable="true" class="demo" onkeyup="getgram()">1</p>
+                <p id="gram" contenteditable="true" class="inc inc1" onkeyup="getkilogram()">12</p>
+            </div>
+        </div>
+
+    </div>
+
+     
+      <script src="unit.js"></script>
+
+</body>
+
+</html>
